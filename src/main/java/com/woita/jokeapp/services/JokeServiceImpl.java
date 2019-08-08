@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class JokeServiceImpl implements JokeService {
 
-    private ChuckNorrisQuotes quoter;
+    private final ChuckNorrisQuotes quoter;
 
     public JokeServiceImpl() {
         this.quoter = new ChuckNorrisQuotes();
